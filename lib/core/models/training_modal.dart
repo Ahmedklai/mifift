@@ -1,8 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'training_modal.freezed.dart';
+part 'training_modal.g.dart';
 
-class TrainingData {
+@freezed
+abstract class TrainingData {
   final String title;
   final int price;
   final String picture;
@@ -12,7 +16,7 @@ class TrainingData {
   final String book;
   final List<String> benefits;
 
-  TrainingData(
+  const TrainingData(
     this.title,
     this.price,
     this.picture,
