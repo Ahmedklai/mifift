@@ -1,4 +1,3 @@
-import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 
 part 'challenge_modal.freezed.dart';
@@ -18,5 +17,5 @@ abstract class ChallengeData with _$ChallengeData {
     bool highlited,
   ) = _ChallengeData;
   factory ChallengeData.fromJson(Map<String, dynamic> json) =>
-      _ChallengeDataFromJson;
+      _$ChallengeDataFromJson(json);
 }
