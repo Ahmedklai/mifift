@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mifift/baseWidget.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:mifift/ui/home/home.dart';
-import 'ui/splash/splash.dart';
+import 'package:mifift/presentation/home/home.dart';
+import 'presentation/splash/splash.dart';
 import 'constants/app_theme.dart';
 
 void main() => runApp(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'ui/home/home.dart';
-import 'ui/splash/splash.dart';
+import 'package:mifift/presentation/screens/splash/splash.dart';
 
 class Routes {
   Routes._();
