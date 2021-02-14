@@ -21,15 +21,17 @@ class Normalchallenge extends StatelessWidget {
       },
       child: Stack(children: <Widget>[
         Container(
-          height: data.height * 0.3,
-          width: data.width * 0.95,
+          height: data.height * 0.350,
+          width: data.width * 0.9,
           decoration: BoxDecoration(
+              color: Colors.red,
               borderRadius: BorderRadius.all(
                 Radius.circular(
-                  50,
+                  25,
                 ),
               ),
-              image: DecorationImage(image: AssetImage(challengeData.picture))),
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage(challengeData.picture))),
         ),
         Positioned(
             top: data.height * 0.2,
@@ -51,8 +53,8 @@ class Normalchallenge extends StatelessWidget {
             )),
         challengeData.highlited
             ? Positioned(
-                top: data.height * 0.23,
-                left: data.width * 0.65,
+                top: data.height * 0.25,
+                left: data.width * 0.5,
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.red,

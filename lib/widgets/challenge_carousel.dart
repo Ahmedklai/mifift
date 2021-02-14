@@ -8,32 +8,34 @@ class ChallengeCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var data = MediaQuery.of(context).size;
-    return SizedBox(
-      height: data.height * 0.3,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        
-        itemCount: 6,
-        itemBuilder: (context, i) {
-          return Container(
-              width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.symmetric(horizontal: 5.0),
-              child: Container(
-                decoration: BoxDecoration(),
+    return CarouselSlider(
+      options: CarouselOptions(
+        aspectRatio: data.height / data.width,
+        height: data.height * 0.3,
+        viewportFraction: 0.9,
+        enableInfiniteScroll: false,
+      ),
+      items: [1, 2, 3, 4, 5].map((i) {
+        return Builder(
+          builder: (BuildContext context) {
+            return Container(
+                width: MediaQuery.of(context).size.width,
+                margin: EdgeInsets.symmetric(horizontal: 5.0),
                 child: Normalchallenge(
                     challengeData: ChallengeData(
-                        'lib/assets/run.jpeg',
-                        'Challenge Name',
-                        'Running',
-                        15,
-                        15,
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd",
-                        15,
-                        true,
-                        false)),
-              ));
-        },
-      ),
+                  'lib/assets/run.png',
+                  'Challenge Name',
+                  'run',
+                  500,
+                  20,
+                  "Challenge Type Lorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, consetetur",
+                  50,
+                  false,
+                  true,
+                )));
+          },
+        );
+      }).toList(),
     );
   }
 }

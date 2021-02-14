@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mifift/ui/home/Pages/challengs/challenges.dart';
 import 'package:mifift/ui/home/Pages/challengs/ranking_page.dart';
 import 'package:mifift/widgets/button.dart';
 import 'package:mifift/widgets/ranking_list.dart';
@@ -36,6 +37,73 @@ class CelebrationScreen extends StatelessWidget {
                               image: AssetImage('lib/assets/Logo.png'),
                             ),
                           )),
+                      Text(
+                        'GONGRATULATIONS',
+                        style: Theme.of(context).textTheme.headline1.copyWith(
+                              color: Theme.of(context).hintColor,
+                            ),
+                      ),
+                      SizedBox(height: data.size.height * 0.025),
+                      Center(
+                        child: Text(
+                          'You made it , challenge completed',
+                          style: Theme.of(context).textTheme.headline2.copyWith(
+                                color: Theme.of(context).hintColor,
+                              ),
+                        ),
+                      ),
+                      SizedBox(height: data.size.height * 0.05),
+                      Text(
+                        '4th place',
+                        style: Theme.of(context).textTheme.headline1.copyWith(
+                              color: Theme.of(context).hintColor,
+                              fontSize: data.size.height * 0.07,
+                            ),
+                      ),
+                      SizedBox(height: data.size.height * 0.01),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.sports_bar,
+                                size: data.size.height * 0.03,
+                              ),
+                              Text(
+                                '1 km',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyText2
+                                    .copyWith(
+                                        color: Theme.of(context).hintColor,
+                                        fontSize: data.size.height * 0.02),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            width: data.size.width * 0.1,
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.lock_clock,
+                                size: data.size.height * 0.03,
+                              ),
+                              Text(
+                                '20 min',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyText2
+                                    .copyWith(
+                                        color: Theme.of(context).hintColor,
+                                        fontSize: data.size.height * 0.02),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                      SizedBox(height: data.size.height * 0.025),
                       RankingListTitle(),
                       RankingList(),
                       SizedBox(height: data.size.height * 0.05),
@@ -47,7 +115,7 @@ class CelebrationScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => RankingPage()),
+                                builder: (context) => Challenges()),
                           );
                         },
                       ),

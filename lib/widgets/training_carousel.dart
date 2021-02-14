@@ -24,9 +24,9 @@ class TrainingCarousel extends StatelessWidget {
                     trainingData: TrainingData(
                         'Challenge Name',
                         500,
-                        'lib/assets/run.jpeg',
+                        'lib/assets/run.png',
                         'Download',
-                        "Challenge Type",
+                        "Challenge Type Lorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, conseteturLorem ipsum dolor sit amet, consetetur",
                         false,
                         'ss', [
                   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."

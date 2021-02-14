@@ -19,7 +19,7 @@ class Profile extends StatelessWidget {
         height: data.height * 0.25,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('lib/assets/runing.png'),
+            image: AssetImage('lib/assets/run.png'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(

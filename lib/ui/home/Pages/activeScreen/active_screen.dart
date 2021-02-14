@@ -61,7 +61,7 @@ class ActiveScreen extends StatelessWidget {
             RoundedButtonWidget(
               buttonColor: Theme.of(context).primaryColor,
               textColor: Theme.of(context).hintColor,
-              buttonText: ('Pause'),
+              buttonText: ('Start'),
               onPressed: () => _controller.start(),
             ),
             SizedBox(height: data.size.height * 0.05),
@@ -69,7 +69,7 @@ class ActiveScreen extends StatelessWidget {
                 outllined: true,
                 buttonColor: Theme.of(context).primaryColor,
                 textColor: Theme.of(context).primaryColor,
-                buttonText: ('End'),
+                buttonText: ('pause'),
                 onPressed: () => _controller.pause()),
           ],
         ),

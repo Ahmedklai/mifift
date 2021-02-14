@@ -76,9 +76,8 @@ class _TrainingDetailsState extends State<TrainingDetails> {
             width: data.size.height * 1,
             height: data.size.height * 0.4,
             decoration: BoxDecoration(
-              color: Colors.red,
               image: DecorationImage(
-                image: AssetImage('lib/assets/runing.png'),
+                image: AssetImage('lib/assets/run.png'),
                 fit: BoxFit.cover,
               ),
             ),

@@ -31,10 +31,11 @@ class Normaltraining extends StatelessWidget {
                   data.width * 0.1,
                 ),
               ),
-              image: DecorationImage(image: AssetImage(trainingData.picture))),
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage(trainingData.picture))),
         ),
         Positioned(
-            top: 130,
+            top: data.height * 0.2,
             left: 15,
             child: Text(
               trainingData.title,
@@ -43,7 +44,7 @@ class Normaltraining extends StatelessWidget {
                   ),
             )),
         Positioned(
-            top: 160,
+            top: data.height * 0.24,
             left: 15,
             child: Text(
               'trainingData.type',

@@ -6,8 +6,7 @@ import 'ui/splash/splash.dart';
 import 'constants/app_theme.dart';
 
 void main() => runApp(
-      MaterialApp(
-          home: DevicePreview(builder: (context) => MyApp())), // Wrap your app
+      MaterialApp(home: MyApp()), // Wrap your app
     );
 
 class MyApp extends StatelessWidget {
