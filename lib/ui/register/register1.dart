@@ -66,7 +66,8 @@ class RegisterScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => RegisterScreen2()),
+                    MaterialPageRoute<void>(
+                        builder: (context) => RegisterScreen2()),
                   );
                 },
               ),
@@ -104,7 +105,7 @@ class RegisterScreen extends StatelessWidget {
   }
 }
 
-_handleRadioValueChange1(value) {
+void _handleRadioValueChange1(int value) {
   if (value == 0) {
     value = 1;
   } else {

@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:mifift/data/challenge_modal.dart';
+import 'package:mifift/core/models/challenge_modal.dart';
 
 import 'normal_challenge.dart';
 

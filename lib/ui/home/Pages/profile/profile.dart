@@ -51,7 +51,7 @@ class Profile extends StatelessWidget {
     );
   }
 
-  Widget _buildStatItem(String label, String count, context) {
+  Widget _buildStatItem(String label, String count, BuildContext context) {
     TextStyle _statLabelTextStyle = Theme.of(context).textTheme.bodyText2;
     TextStyle _statCountTextStyle =
         Theme.of(context).textTheme.headline2.copyWith(color: Colors.white);
@@ -71,7 +71,7 @@ class Profile extends StatelessWidget {
     );
   }
 
-  Widget _buildStatContainer(context) {
+  Widget _buildStatContainer(BuildContext context) {
     return Container(
       height: 60.0,
       margin: EdgeInsets.only(top: 8.0),
@@ -114,7 +114,7 @@ class Profile extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Settings()),
+                MaterialPageRoute<void>(builder: (context) => Settings()),
               );
             },
           ),
@@ -125,7 +125,8 @@ class Profile extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => NotifacationPrivacy()),
+                MaterialPageRoute<void>(
+                    builder: (context) => NotifacationPrivacy()),
               );
             },
           ),
@@ -135,7 +136,7 @@ class Profile extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Legal()),
+                MaterialPageRoute<void>(builder: (context) => Legal()),
               );
             },
           ),

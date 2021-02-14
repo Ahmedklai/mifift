@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => App()),
+                    MaterialPageRoute<void>(builder: (context) => App()),
                   );
                 },
               ),
@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
+                          MaterialPageRoute<void>(
                               builder: (context) => ResetPasswordScreen()),
                         );
                       },

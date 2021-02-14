@@ -54,7 +54,8 @@ class ActiveScreen extends StatelessWidget {
               onComplete: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CelebrationScreen()),
+                  MaterialPageRoute<void>(
+                      builder: (context) => CelebrationScreen()),
                 );
               },
             )),

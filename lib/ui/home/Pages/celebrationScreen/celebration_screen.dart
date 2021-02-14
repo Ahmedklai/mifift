@@ -114,7 +114,7 @@ class CelebrationScreen extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
+                            MaterialPageRoute<void>(
                                 builder: (context) => Challenges()),
                           );
                         },
@@ -155,7 +155,7 @@ class RankingListTitle extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => RankingPage()),
+                MaterialPageRoute<void>(builder: (context) => RankingPage()),
               );
             },
             child: Text(

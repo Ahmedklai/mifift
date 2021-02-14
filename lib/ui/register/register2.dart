@@ -65,7 +65,8 @@ class RegisterScreen2 extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => RegisterScreen3()),
+                    MaterialPageRoute<void>(
+                        builder: (context) => RegisterScreen3()),
                   );
                 },
               ),

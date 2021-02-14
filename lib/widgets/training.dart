@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/data/training_modal.dart';
+import 'package:mifift/core/models/training_modal.dart';
 import 'package:mifift/ui/home/Pages/challengs/challenge_details.dart';
 import 'package:mifift/ui/home/Pages/training/trainig_details.dart';
 
@@ -15,7 +15,7 @@ class Normaltraining extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
+          MaterialPageRoute<void>(
               builder: (context) => TrainingDetails(
                     trainingData: trainingData,
                   )),

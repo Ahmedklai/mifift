@@ -84,7 +84,7 @@ class _NotifacationPrivacyState extends State<NotifacationPrivacy> {
             color: Theme.of(context).hintColor,
           ),
           InkWell(
-              onTap: () => showConfirmationDialog(
+              onTap: () => showConfirmationDialog<void>(
                   context: context,
                   title: 'delete account',
                   message:

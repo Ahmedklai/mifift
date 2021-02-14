@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/data/training_modal.dart';
+import 'package:mifift/models/training_modal.dart';
 import 'package:mifift/ui/home/Pages/training/trainig_plan.dart';
 import 'package:mifift/ui/register/register3.dart';
 import 'package:mifift/widgets/button.dart';
@@ -142,7 +142,7 @@ class _TrainingDetailsState extends State<TrainingDetails> {
                   onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(
+                        MaterialPageRoute<void>(
                             builder: (context) => TrainingPlan()));
                   },
                 ),

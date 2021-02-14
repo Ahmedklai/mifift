@@ -31,7 +31,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => RegisterScreen()),
+                    MaterialPageRoute<void>(
+                        builder: (context) => RegisterScreen()),
                   );
                 },
               ),
@@ -43,7 +44,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                    MaterialPageRoute<void>(
+                        builder: (context) => LoginScreen()),
                   );
                 },
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/data/challenge_modal.dart';
+import 'package:mifift/core/models/challenge_modal.dart';
+
 import 'package:mifift/ui/register/register3.dart';
 import 'package:mifift/widgets/button.dart';
 
@@ -117,7 +118,7 @@ class ChallengeDetails extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(
+                        MaterialPageRoute<void>(
                             builder: (context) => ActiveScreen()));
                   },
                 ),

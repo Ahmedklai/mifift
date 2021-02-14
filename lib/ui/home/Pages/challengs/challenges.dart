@@ -111,7 +111,7 @@ class RankingListTitle extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => RankingPage()),
+                MaterialPageRoute<void>(builder: (context) => RankingPage()),
               );
             },
             child: Text(
