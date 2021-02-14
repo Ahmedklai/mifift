@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/models/training_modal.dart';
+import 'package:mifift/core/models/training_modal.dart';
 import 'package:mifift/ui/home/Pages/training/trainig_plan.dart';
 import 'package:mifift/ui/register/register3.dart';
 import 'package:mifift/widgets/button.dart';
@@ -22,7 +22,7 @@ class _TrainingDetailsState extends State<TrainingDetails> {
       switch (status) {
         case 'Buy':
           return IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.download_outlined,
               color: Colors.white30,
             ),
@@ -35,7 +35,7 @@ class _TrainingDetailsState extends State<TrainingDetails> {
           break;
         case 'Download':
           return IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.download_outlined,
             ),
             onPressed: () {
@@ -48,7 +48,7 @@ class _TrainingDetailsState extends State<TrainingDetails> {
           break;
         case 'Open':
           return IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.g_translate_rounded,
               color: Colors.white30,
             ),
