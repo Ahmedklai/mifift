@@ -1,9 +1,11 @@
+import 'package:json_annotation/json_annotation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:meta/meta.dart';
 
 part 'challenge_modal.freezed.dart';
 part 'challenge_modal.g.dart';
 
-@immutable
+@freezed
 abstract class ChallengeData with _$ChallengeData {
   const factory ChallengeData(
     String picture,
