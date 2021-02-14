@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="23" viewBox="0 0 34 23">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Icon" width="34" height="23" transform="translate(0 0.236)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Tab_Button" data-name="Tab Button" transform="translate(0 -0.236)">
+    <g id="Glyph">
+      <rect id="Frame" width="34" height="23" transform="translate(0 0.236)" fill="none"/>
+      <g id="Mask_Group_6" data-name="Mask Group 6" clip-path="url(#clip-path)">
+        <g id="mountain" transform="translate(3.47 0.209)">
+          <path id="Path_114" data-name="Path 114" d="M10.758,8.415V5.487h4.579a.982.982,0,0,0,.981-.981v-3.5a.982.982,0,0,0-.981-.981H10.152a.982.982,0,0,0-.981.981v7.41L.276,20.694a1.509,1.509,0,0,0-.112,1.554,1.413,1.413,0,0,0,1.257.778H21.5l-5.428-7.349Zm0,0" fill="#bababa"/>
+          <path id="Path_115" data-name="Path 115" d="M26.8,20.833l-6.124-8.541a1.333,1.333,0,0,0-2.177,0l-1.48,2.083L23.4,23.026h2.309a1.341,1.341,0,0,0,1.194-.736A1.414,1.414,0,0,0,26.8,20.833Zm0,0" fill="#bababa"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

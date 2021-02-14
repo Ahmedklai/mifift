@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="23" viewBox="0 0 34 23">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Icon" width="34" height="22" transform="translate(11 0.236)" fill="#efefef" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Tab_Button" data-name="Tab Button" transform="translate(-8 -0.236)">
+    <g id="Glyph" transform="translate(-3)">
+      <rect id="Frame" width="34" height="23" transform="translate(11 0.236)" fill="none"/>
+      <g id="Mask_Group_5" data-name="Mask Group 5" clip-path="url(#clip-path)">
+        <g id="Books" transform="translate(17 0.236)">
+          <path id="Path_106" data-name="Path 106" d="M11.339,15.239V0H6.283V15.239ZM9.491,2.8V4.087H8.131V2.8Z" fill="#bababa"/>
+          <path id="Path_107" data-name="Path 107" d="M5,0H0V15.239H5ZM1.787,4.087V2.8h1.36V4.087Z" fill="#bababa"/>
+          <path id="Path_108" data-name="Path 108" d="M0,19.247H5v5.474H0Z" transform="translate(0 -2.721)" fill="#bababa"/>
+          <path id="Path_109" data-name="Path 109" d="M6.283,16.526h4.408v1.827H6.283Z" transform="translate(0.292 -14)" fill="#bababa"/>
+          <path id="Path_110" data-name="Path 110" d="M0,16.526H4.629v1.827H0Z" transform="translate(0.254 -14)" fill="#bababa"/>
+          <path id="Path_111" data-name="Path 111" d="M6.283,19.247h5.056v5.474H6.283Z" transform="translate(0 -2.721)" fill="#bababa"/>
+          <path id="Path_112" data-name="Path 112" d="M17.03.834l-4.4.916L18.589,22l4.4-.917Z" fill="#bababa"/>
+          <path id="Path_113" data-name="Path 113" d="M0,16.526H5v1.287H0Z" transform="translate(11.678 -0.197) rotate(-16)" fill="#1c1c1c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
