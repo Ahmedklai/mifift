@@ -14,7 +14,7 @@ class AuthRepositoryImpl extends AuthRespository {
       final authResponse = await authSource.signIn(emailOrUserName, password);
       return Right(authResponse);
     } on Exception {
-      return Left(AppError('something went wrong during signin'));
+      return Left(AppError(message:'something went wrong during signin'));
     }
   }
 
@@ -24,7 +24,7 @@ class AuthRepositoryImpl extends AuthRespository {
       final authResponse = await authSource.signUp();
       return Right(authResponse);
     } on Exception {
-      return Left(AppError('something went wrong during signup'));
+      return Left(AppError(message:'something went wrong during signup'));
     }
   }
 
@@ -34,7 +34,7 @@ class AuthRepositoryImpl extends AuthRespository {
       final authResponse = await authSource.logout();
       return Right(authResponse);
     } on Exception {
-      return Left(AppError('something went wrong during logout'));
+      return Left(AppError(message:'something went wrong during logout'));
     }
   }
 }
