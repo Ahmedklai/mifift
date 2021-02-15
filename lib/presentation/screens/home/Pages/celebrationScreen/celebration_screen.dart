@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/home/Pages/challengs/challenges.dart';
-import 'package:mifift/presentation/home/Pages/challengs/ranking_page.dart';
-import 'package:mifift/widgets/button.dart';
-import 'package:mifift/widgets/ranking_list.dart';
+
+
+import '../../../../widgets/button.dart';
+import '../../../../widgets/ranking_list.dart';
+import '../challengs/challenges.dart';
+import '../challengs/ranking_page.dart';
 
 class CelebrationScreen extends StatelessWidget {
   @override

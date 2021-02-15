@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/login/set_new_password.dart';
-import 'package:mifift/widgets/button.dart';
-import 'package:mifift/widgets/text_field.dart';
+import 'package:mifift/presentation/screens/login/set_new_password.dart';
+import 'package:mifift/presentation/widgets/button.dart';
+import 'package:mifift/presentation/widgets/text_field.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   @override

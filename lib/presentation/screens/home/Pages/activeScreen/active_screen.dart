@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/home/Pages/celebrationScreen/celebration_screen.dart';
-import 'package:mifift/presentation/home/home.dart';
-import 'package:mifift/presentation/login/reset_password.dart';
-import 'package:mifift/widgets/button.dart';
+
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
+
+import '../../../../widgets/button.dart';
+import '../celebrationScreen/celebration_screen.dart';
 
 class ActiveScreen extends StatelessWidget {
   @override

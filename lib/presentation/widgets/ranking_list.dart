@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/home/Pages/challengs/ranking_page.dart';
+import 'package:mifift/presentation/screens/home/Pages/challengs/ranking_page.dart';
 import 'ranking_element.dart';
 
 class RankingList extends StatelessWidget {

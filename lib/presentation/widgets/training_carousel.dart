@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:mifift/core/models/training_modal.dart';
-import 'package:mifift/widgets/training.dart';
+import 'package:mifift/data/models/training_modal.dart';
+import 'package:mifift/presentation/widgets/training.dart';
 
 class TrainingCarousel extends StatelessWidget {
   @override

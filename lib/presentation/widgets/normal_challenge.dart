@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/core/models/challenge_modal.dart';
-import 'package:mifift/presentation/home/Pages/challengs/challenge_details.dart';
+import 'package:mifift/data/models/challenge_modal.dart';
 
 class Normalchallenge extends StatelessWidget {
   final ChallengeData challengeData;
@@ -14,7 +13,7 @@ class Normalchallenge extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute<void>(
-              builder: (context) => ChallengeDetails(
+              builder: (context) => Normalchallenge(
                     challengeData: challengeData,
                   )),
         );

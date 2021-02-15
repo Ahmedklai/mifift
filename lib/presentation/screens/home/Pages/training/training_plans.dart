@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:mifift/presentation/home/Pages/challengs/ranking_page.dart';
-import 'package:mifift/widgets/challenge_carousel.dart';
-import 'package:mifift/widgets/normal_challenge.dart';
-import 'package:mifift/widgets/ranking_list.dart';
-import 'package:mifift/widgets/training_carousel.dart';
+
+import '../../../../widgets/training_carousel.dart';
 
 class TrainingPlans extends StatefulWidget {
   @override

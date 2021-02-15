@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/widgets/button.dart';
-import 'package:mifift/widgets/ranking_list.dart';
-import 'package:mifift/widgets/text_field.dart';
+
+import '../../../../widgets/button.dart';
+import '../../../../widgets/text_field.dart';
+
 
 class Settings extends StatefulWidget {
   @override

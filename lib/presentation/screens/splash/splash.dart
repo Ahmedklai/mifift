@@ -1,7 +1,7 @@
-import 'package:mifift/presentation/home/home.dart';
-import 'package:mifift/presentation/login/login.dart';
-import 'package:mifift/presentation/register/register1.dart';
-import 'package:mifift/widgets/button.dart';
+import 'package:mifift/presentation/screens/home/home.dart';
+import 'package:mifift/presentation/screens/login/login.dart';
+import 'package:mifift/presentation/screens/register/register1.dart';
+import 'package:mifift/presentation/widgets/button.dart';
 import 'package:mifift/constants/app_theme.dart';
 import 'package:flutter/material.dart';
 

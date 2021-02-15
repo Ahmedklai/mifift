@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/register/register3.dart';
-import 'package:mifift/widgets/button.dart';
-import 'package:mifift/widgets/text_field.dart';
+import 'package:mifift/presentation/screens/register/register3.dart';
+import 'package:mifift/presentation/widgets/button.dart';
+import 'package:mifift/presentation/widgets/text_field.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class RegisterScreen2 extends StatelessWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/home/home.dart';
-import 'package:mifift/widgets/ranking_list.dart';
+
+
+import '../../../../widgets/ranking_list.dart';
 
 class RankingPage extends StatefulWidget {
   @override

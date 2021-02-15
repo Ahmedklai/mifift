@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/core/models/training_modal.dart';
-import 'package:mifift/presentation/home/Pages/challengs/challenge_details.dart';
-import 'package:mifift/presentation/home/Pages/training/trainig_details.dart';
+import 'package:mifift/data/models/training_modal.dart';
+import 'package:mifift/presentation/screens/home/Pages/training/trainig_details.dart';
 
 class Normaltraining extends StatelessWidget {
   final TrainingData trainingData;

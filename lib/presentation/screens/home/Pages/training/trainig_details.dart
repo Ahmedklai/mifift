@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/core/models/training_modal.dart';
-import 'package:mifift/presentation/home/Pages/training/trainig_plan.dart';
-import 'package:mifift/presentation/register/register3.dart';
-import 'package:mifift/widgets/button.dart';
 
+
+import '../../../../../data/models/training_modal.dart';
+import '../../../../widgets/button.dart';
 import '../activeScreen/active_screen.dart';
+import 'trainig_plan.dart';
 
 class TrainingDetails extends StatefulWidget {
   final TrainingData trainingData;

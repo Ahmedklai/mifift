@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/home/Pages/profile/legal.dart';
-import 'package:mifift/presentation/home/Pages/profile/notification_privacy.dart';
-import 'package:mifift/presentation/home/Pages/profile/settings.dart';
-import 'package:mifift/presentation/home/home.dart';
+
+import 'legal.dart';
+import 'notification_privacy.dart';
+import 'settings.dart';
 
 class Profile extends StatelessWidget {
   final String _fullName = "Nick Frost";

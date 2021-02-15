@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/register/register2.dart';
-import 'package:mifift/widgets/button.dart';
-import 'package:mifift/widgets/text_field.dart';
+import 'package:mifift/presentation/screens/register/register2.dart';
+import 'package:mifift/presentation/widgets/button.dart';
+import 'package:mifift/presentation/widgets/text_field.dart';
 
 class RegisterScreen extends StatelessWidget {
   @override

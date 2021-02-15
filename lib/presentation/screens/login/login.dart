@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mifift/presentation/home/home.dart';
-import 'package:mifift/presentation/login/reset_password.dart';
-import 'package:mifift/widgets/button.dart';
-import 'package:mifift/widgets/text_field.dart';
+import 'package:mifift/presentation/screens/home/home.dart';
+import 'package:mifift/presentation/screens/login/reset_password.dart';
+import 'package:mifift/presentation/widgets/button.dart';
+import 'package:mifift/presentation/widgets/text_field.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
