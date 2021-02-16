@@ -29,6 +29,11 @@ class _$LoginStateTearOff {
       error,
     );
   }
+
+// ignore: unused_element
+  _Success success() {
+    return const _Success();
+  }
 }
 
 /// @nodoc
@@ -42,12 +47,14 @@ mixin _$LoginState {
     @required TResult initial(),
     @required TResult loading(),
     @required TResult error(String error),
+    @required TResult success(),
   });
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object>({
     TResult initial(),
     TResult loading(),
     TResult error(String error),
+    TResult success(),
     @required TResult orElse(),
   });
   @optionalTypeArgs
@@ -55,12 +62,14 @@ mixin _$LoginState {
     @required TResult initial(_Initial value),
     @required TResult loading(_Loading value),
     @required TResult error(_Error value),
+    @required TResult success(_Success value),
   });
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object>({
     TResult initial(_Initial value),
     TResult loading(_Loading value),
     TResult error(_Error value),
+    TResult success(_Success value),
     @required TResult orElse(),
   });
 }
@@ -120,10 +129,12 @@ class _$_Initial implements _Initial {
     @required TResult initial(),
     @required TResult loading(),
     @required TResult error(String error),
+    @required TResult success(),
   }) {
     assert(initial != null);
     assert(loading != null);
     assert(error != null);
+    assert(success != null);
     return initial();
   }
 
@@ -133,6 +144,7 @@ class _$_Initial implements _Initial {
     TResult initial(),
     TResult loading(),
     TResult error(String error),
+    TResult success(),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -148,10 +160,12 @@ class _$_Initial implements _Initial {
     @required TResult initial(_Initial value),
     @required TResult loading(_Loading value),
     @required TResult error(_Error value),
+    @required TResult success(_Success value),
   }) {
     assert(initial != null);
     assert(loading != null);
     assert(error != null);
+    assert(success != null);
     return initial(this);
   }
 
@@ -161,6 +175,7 @@ class _$_Initial implements _Initial {
     TResult initial(_Initial value),
     TResult loading(_Loading value),
     TResult error(_Error value),
+    TResult success(_Success value),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -214,10 +229,12 @@ class _$_Loading implements _Loading {
     @required TResult initial(),
     @required TResult loading(),
     @required TResult error(String error),
+    @required TResult success(),
   }) {
     assert(initial != null);
     assert(loading != null);
     assert(error != null);
+    assert(success != null);
     return loading();
   }
 
@@ -227,6 +244,7 @@ class _$_Loading implements _Loading {
     TResult initial(),
     TResult loading(),
     TResult error(String error),
+    TResult success(),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -242,10 +260,12 @@ class _$_Loading implements _Loading {
     @required TResult initial(_Initial value),
     @required TResult loading(_Loading value),
     @required TResult error(_Error value),
+    @required TResult success(_Success value),
   }) {
     assert(initial != null);
     assert(loading != null);
     assert(error != null);
+    assert(success != null);
     return loading(this);
   }
 
@@ -255,6 +275,7 @@ class _$_Loading implements _Loading {
     TResult initial(_Initial value),
     TResult loading(_Loading value),
     TResult error(_Error value),
+    TResult success(_Success value),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -330,10 +351,12 @@ class _$_Error implements _Error {
     @required TResult initial(),
     @required TResult loading(),
     @required TResult error(String error),
+    @required TResult success(),
   }) {
     assert(initial != null);
     assert(loading != null);
     assert(error != null);
+    assert(success != null);
     return error(this.error);
   }
 
@@ -343,6 +366,7 @@ class _$_Error implements _Error {
     TResult initial(),
     TResult loading(),
     TResult error(String error),
+    TResult success(),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -358,10 +382,12 @@ class _$_Error implements _Error {
     @required TResult initial(_Initial value),
     @required TResult loading(_Loading value),
     @required TResult error(_Error value),
+    @required TResult success(_Success value),
   }) {
     assert(initial != null);
     assert(loading != null);
     assert(error != null);
+    assert(success != null);
     return error(this);
   }
 
@@ -371,6 +397,7 @@ class _$_Error implements _Error {
     TResult initial(_Initial value),
     TResult loading(_Loading value),
     TResult error(_Error value),
+    TResult success(_Success value),
     @required TResult orElse(),
   }) {
     assert(orElse != null);
@@ -387,4 +414,104 @@ abstract class _Error implements LoginState {
   String get error;
   @JsonKey(ignore: true)
   _$ErrorCopyWith<_Error> get copyWith;
+}
+
+/// @nodoc
+abstract class _$SuccessCopyWith<$Res> {
+  factory _$SuccessCopyWith(_Success value, $Res Function(_Success) then) =
+      __$SuccessCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$SuccessCopyWithImpl<$Res> extends _$LoginStateCopyWithImpl<$Res>
+    implements _$SuccessCopyWith<$Res> {
+  __$SuccessCopyWithImpl(_Success _value, $Res Function(_Success) _then)
+      : super(_value, (v) => _then(v as _Success));
+
+  @override
+  _Success get _value => super._value as _Success;
+}
+
+/// @nodoc
+class _$_Success implements _Success {
+  const _$_Success();
+
+  @override
+  String toString() {
+    return 'LoginState.success()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _Success);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult initial(),
+    @required TResult loading(),
+    @required TResult error(String error),
+    @required TResult success(),
+  }) {
+    assert(initial != null);
+    assert(loading != null);
+    assert(error != null);
+    assert(success != null);
+    return success();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult initial(),
+    TResult loading(),
+    TResult error(String error),
+    TResult success(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (success != null) {
+      return success();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult initial(_Initial value),
+    @required TResult loading(_Loading value),
+    @required TResult error(_Error value),
+    @required TResult success(_Success value),
+  }) {
+    assert(initial != null);
+    assert(loading != null);
+    assert(error != null);
+    assert(success != null);
+    return success(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult initial(_Initial value),
+    TResult loading(_Loading value),
+    TResult error(_Error value),
+    TResult success(_Success value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (success != null) {
+      return success(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Success implements LoginState {
+  const factory _Success() = _$_Success;
 }

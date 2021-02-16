@@ -14,9 +14,9 @@ class _$AppErrorTearOff {
   const _$AppErrorTearOff();
 
 // ignore: unused_element
-  _AppError call({@required String message}) {
+  _AppError call({@required NetworkExceptions error}) {
     return _AppError(
-      message: message,
+      error: error,
     );
   }
 }
@@ -27,7 +27,7 @@ const $AppError = _$AppErrorTearOff();
 
 /// @nodoc
 mixin _$AppError {
-  String get message;
+  NetworkExceptions get error;
 
   @JsonKey(ignore: true)
   $AppErrorCopyWith<AppError> get copyWith;
@@ -37,7 +37,9 @@ mixin _$AppError {
 abstract class $AppErrorCopyWith<$Res> {
   factory $AppErrorCopyWith(AppError value, $Res Function(AppError) then) =
       _$AppErrorCopyWithImpl<$Res>;
-  $Res call({String message});
+  $Res call({NetworkExceptions error});
+
+  $NetworkExceptionsCopyWith<$Res> get error;
 }
 
 /// @nodoc
@@ -50,11 +52,21 @@ class _$AppErrorCopyWithImpl<$Res> implements $AppErrorCopyWith<$Res> {
 
   @override
   $Res call({
-    Object message = freezed,
+    Object error = freezed,
   }) {
     return _then(_value.copyWith(
-      message: message == freezed ? _value.message : message as String,
+      error: error == freezed ? _value.error : error as NetworkExceptions,
     ));
+  }
+
+  @override
+  $NetworkExceptionsCopyWith<$Res> get error {
+    if (_value.error == null) {
+      return null;
+    }
+    return $NetworkExceptionsCopyWith<$Res>(_value.error, (value) {
+      return _then(_value.copyWith(error: value));
+    });
   }
 }
 
@@ -63,7 +75,10 @@ abstract class _$AppErrorCopyWith<$Res> implements $AppErrorCopyWith<$Res> {
   factory _$AppErrorCopyWith(_AppError value, $Res Function(_AppError) then) =
       __$AppErrorCopyWithImpl<$Res>;
   @override
-  $Res call({String message});
+  $Res call({NetworkExceptions error});
+
+  @override
+  $NetworkExceptionsCopyWith<$Res> get error;
 }
 
 /// @nodoc
@@ -77,37 +92,37 @@ class __$AppErrorCopyWithImpl<$Res> extends _$AppErrorCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object message = freezed,
+    Object error = freezed,
   }) {
     return _then(_AppError(
-      message: message == freezed ? _value.message : message as String,
+      error: error == freezed ? _value.error : error as NetworkExceptions,
     ));
   }
 }
 
 /// @nodoc
 class _$_AppError implements _AppError {
-  const _$_AppError({@required this.message}) : assert(message != null);
+  const _$_AppError({@required this.error}) : assert(error != null);
 
   @override
-  final String message;
+  final NetworkExceptions error;
 
   @override
   String toString() {
-    return 'AppError(message: $message)';
+    return 'AppError(error: $error)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _AppError &&
-            (identical(other.message, message) ||
-                const DeepCollectionEquality().equals(other.message, message)));
+            (identical(other.error, error) ||
+                const DeepCollectionEquality().equals(other.error, error)));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(message);
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(error);
 
   @JsonKey(ignore: true)
   @override
@@ -116,10 +131,10 @@ class _$_AppError implements _AppError {
 }
 
 abstract class _AppError implements AppError {
-  const factory _AppError({@required String message}) = _$_AppError;
+  const factory _AppError({@required NetworkExceptions error}) = _$_AppError;
 
   @override
-  String get message;
+  NetworkExceptions get error;
   @override
   @JsonKey(ignore: true)
   _$AppErrorCopyWith<_AppError> get copyWith;
